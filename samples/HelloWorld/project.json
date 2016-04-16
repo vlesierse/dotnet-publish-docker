@@ -1,0 +1,27 @@
+{
+  "name": "HelloWorld",
+  "version": "1.0.0-*",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+  "frameworks": {
+    "netstandardapp1.5": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0-rc2-23931"
+        }
+      },
+      "imports": [
+        "dnxcore50",
+        "portable-net451+win8"
+      ]
+    }
+  },
+  "tools": {
+    "dotnet-publish-docker": "1.0.0-dev"
+  },
+  "scripts": {
+    "postpublish": "dotnet publish-docker --base-image vlesierse/dotnet --publish-folder %publish:OutputPath%"
+  }
+}

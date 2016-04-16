@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "DotNet.Tools.Docker.Core": "1.0.0-*",
+    "xunit": "2.1.0"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": [
+        "dnxcore50",
+        "portable-net451+win8"
+      ],
+      "dependencies": {
+        "dotnet-test-xunit": "1.0.0-dev-*",
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0-rc2-23931"
+        }
+      }
+    }
+  },
+  "testRunner": "xunit"
+}
