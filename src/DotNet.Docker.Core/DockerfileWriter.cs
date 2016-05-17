@@ -14,7 +14,7 @@ namespace DotNet.Tools.Docker
         }
         public string Write()
         {
-            var baseImage = _baseImage ?? "microsoft/dotnet:0.0.1-alpha";
+            var baseImage = _baseImage ?? "microsoft/dotnet";
             var dockerfile = new StringBuilder();
             
             dockerfile.AppendLine($"FROM {baseImage}");

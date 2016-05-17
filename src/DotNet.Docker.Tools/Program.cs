@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.Extensions.CommandLineUtils;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.PlatformAbstractions;
 
 namespace DotNet.Tools.Docker
 {
@@ -13,7 +12,7 @@ namespace DotNet.Tools.Docker
         public Program()
         {
             _loggerFactory = new LoggerFactory();
-            _loggerFactory.AddProvider(new CommandOutputProvider(PlatformServices.Default.Runtime));
+            _loggerFactory.AddProvider(new CommandOutputProvider());
             _logger = _loggerFactory.CreateLogger<Program>();
         }
         

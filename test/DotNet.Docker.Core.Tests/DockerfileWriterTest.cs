@@ -25,7 +25,7 @@ namespace DotNet.Tools.Docker.Tests
         {
             var writer = new DockerfileWriter("testapp", null);
             var result = writer.Write();
-            Assert.StartsWith("FROM microsoft/dotnet:0.0.1-alpha", result);
+            Assert.StartsWith("FROM microsoft/dotnet", result);
         }
     }
 }

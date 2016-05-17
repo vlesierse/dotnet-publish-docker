@@ -10,7 +10,6 @@ namespace HelloWeb
             var host = new WebHostBuilder()
                         .UseKestrel()
                         .UseContentRoot(Directory.GetCurrentDirectory())
-                        .UseDefaultHostingConfiguration(args)
                         .UseStartup<Startup>()
                         .Build();
 

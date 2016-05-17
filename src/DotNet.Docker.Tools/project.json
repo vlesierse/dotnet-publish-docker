@@ -1,0 +1,38 @@
+{
+  "name": "dotnet-publish-docker",
+  "title": ".NET Docker Publisher",
+  "description": "Publish your application to a Docker image using the .NET CLI",
+  "authors": [ "Vincent Lesierse" ],
+  "copyright": "Copyright © 2016 Vincent Lesierse",
+  "version": "1.0.0-alpha1-*",
+  "buildOptions": {
+    "outputName": "dotnet-publish-docker",
+    "emitEntryPoint": true
+  },
+  "packOptions": {
+    "tags": ["dotnet", "publish", "docker", "cli"],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/vlesierse/dotnet-publish-docker"
+    },
+    "projectUrl": "https://github.com/vlesierse/dotnet-publish-docker",
+    "licenseUrl": "https://github.com/vlesierse/dotnet-publish-docker/blob/master/LICENSE"
+  },
+  "dependencies": {
+    "DotNet.Docker.Core": "1.0.0-*",
+    "Microsoft.Extensions.CommandLineUtils": "1.0.0-rc2-final",
+    "Microsoft.Extensions.Logging": "1.0.0-rc2-final",
+    "Microsoft.Extensions.Logging.Console": "1.0.0-rc2-final"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0-rc2-*"
+        }
+      },
+      "imports": [ "portable-net451+win8", "dnxcore50" ]
+    }
+  }
+}
