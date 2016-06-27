@@ -1,4 +1,4 @@
-using Microsoft.Extensions.PlatformAbstractions;
+using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
 
 namespace DotNet.Tools.Docker
@@ -9,7 +9,7 @@ namespace DotNet.Tools.Docker
 
         public CommandOutputProvider()
         {
-            _isWindows = PlatformServices.Default.Runtime.OperatingSystemPlatform == Platform.Windows;
+            _isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
         }
 
         public ILogger CreateLogger(string name)

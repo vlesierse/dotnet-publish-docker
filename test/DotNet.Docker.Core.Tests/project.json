@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "DotNet.Docker.Core": "1.0.0-*",
-    "dotnet-test-xunit": "1.0.0-rc2-*",
+    "dotnet-test-xunit": "1.0.0-*",
     "xunit": "2.1.0"
   },
   "frameworks": {
@@ -13,7 +13,7 @@
       "dependencies": {
         "Microsoft.NETCore.App": {
           "type": "platform",
-          "version": "1.0.0-rc2-*"
+          "version": "1.0.0"
         }
       }
     }
