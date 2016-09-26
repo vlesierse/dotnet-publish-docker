@@ -1,6 +1,9 @@
 # .NET Core Docker Publisher
 Publish your application to a Docker image using the .NET CLI
 
+[![Build Status](https://travis-ci.org/vlesierse/dotnet-publish-docker.svg?branch=master)](https://travis-ci.org/vlesierse/dotnet-publish-docker)
+[![NuGet Pre Release](https://img.shields.io/nuget/vpre/dotnet-publish-docker.svg?maxAge=2592000)](https://www.nuget.org/packages/dotnet-publish-docker)
+
 ## Prerequisites
 
 - [.NET Core](http://dot.net)
