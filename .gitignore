@@ -234,5 +234,4 @@ _Pvt_Extensions
 .fake/
 
 # Cake Build
-tools/Cake/
-tools/nuget.exe
+tools/Cake.CoreCLR/

@@ -4,7 +4,7 @@
   "description": "Publish your application to a Docker image using the .NET CLI",
   "authors": [ "Vincent Lesierse" ],
   "copyright": "Copyright © 2016 Vincent Lesierse",
-  "version": "1.0.0-alpha2-*",
+  "version": "1.0.0-preview1-*",
   "buildOptions": {
     "outputName": "dotnet-publish-docker",
     "emitEntryPoint": true

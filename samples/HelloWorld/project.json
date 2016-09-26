@@ -19,7 +19,7 @@
     }
   },
   "tools": {
-    "dotnet-publish-docker": "1.0.0-alpha1"
+    "dotnet-publish-docker": "1.0.0-*"
   },
   "scripts": {
     "postpublish": "dotnet publish-docker --publish-folder %publish:OutputPath%"

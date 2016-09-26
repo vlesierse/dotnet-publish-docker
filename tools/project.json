@@ -1,0 +1,8 @@
+{
+    "dependencies": {
+        "Cake.CoreCLR": "0.16.1"
+    },
+    "frameworks": {
+        "netstandard1.6": {}
+    }
+}
