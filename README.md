@@ -16,7 +16,7 @@ Next, you should change your `project.json` file and add the `dotnet-publish-doc
 
 ```json
 "tools": {
-  "dotnet-publish-docker": "1.0.0-alpha1"
+  "dotnet-publish-docker": "1.0.0-preview1"
 },
 "scripts": {
   "postpublish": "dotnet publish-docker --publish-folder %publish:OutputPath%"
